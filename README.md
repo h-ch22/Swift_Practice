@@ -10,7 +10,7 @@
 
 2020-06-02
 
-- Added Features : Sign-up Screen with SwiftUI
+- Added Features : Sign-up / Sign-in / Reset Password Screen with SwiftUI, Sign-up with E-mail Address,    Sign-in with E-mail Address
 
 ![iPhone_Start](./image/iPhone_Start.png)
 ![iPhone_Register](./image/iPhone_Register.png)

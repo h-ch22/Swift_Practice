@@ -10,6 +10,8 @@
 		2B34B3D2C59C724C4355302F /* Pods_SwiftTempTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 191F7631CDABD391615001BE /* Pods_SwiftTempTests.framework */; };
 		366E1C4B3C100EA6A138F794 /* Pods_SwiftTemp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6FEB271D341AF1F5EFA479 /* Pods_SwiftTemp.framework */; };
 		CE5939181A71750C0CB2BDE0 /* Pods_SwiftTemp_SwiftTempUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582175E22F448D1EDBF5F3C3 /* Pods_SwiftTemp_SwiftTempUITests.framework */; };
+		F60A7CD2248674D700616E5C /* signIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60A7CD1248674D700616E5C /* signIn.swift */; };
+		F60A7CD42486827600616E5C /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60A7CD32486827600616E5C /* ResetPassword.swift */; };
 		F6A007AF2486233F00667203 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A007AE2486233F00667203 /* ContentView.swift */; };
 		F6A007B124862DA600667203 /* Tutorial_Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A007B024862DA600667203 /* Tutorial_Register.swift */; };
 		F6A007B32486340300667203 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A007B22486340300667203 /* Home.swift */; };
@@ -49,6 +51,8 @@
 		582175E22F448D1EDBF5F3C3 /* Pods_SwiftTemp_SwiftTempUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTemp_SwiftTempUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2D023C276DCD89515F1679 /* Pods-SwiftTempTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTempTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftTempTests/Pods-SwiftTempTests.release.xcconfig"; sourceTree = "<group>"; };
 		A444C5066C7DE8D48FC9DAD7 /* Pods-SwiftTemp-SwiftTempUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTemp-SwiftTempUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftTemp-SwiftTempUITests/Pods-SwiftTemp-SwiftTempUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F60A7CD1248674D700616E5C /* signIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signIn.swift; sourceTree = "<group>"; };
+		F60A7CD32486827600616E5C /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
 		F6A007AE2486233F00667203 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../../../.Trash/ContentView.swift; sourceTree = "<group>"; };
 		F6A007B024862DA600667203 /* Tutorial_Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial_Register.swift; sourceTree = "<group>"; };
 		F6A007B22486340300667203 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 				F6EA81E4248617EC001F4C34 /* Preview Content */,
 				F6A007B024862DA600667203 /* Tutorial_Register.swift */,
 				F6A007B22486340300667203 /* Home.swift */,
+				F60A7CD1248674D700616E5C /* signIn.swift */,
+				F60A7CD32486827600616E5C /* ResetPassword.swift */,
 			);
 			path = SwiftTemp;
 			sourceTree = "<group>";
@@ -427,9 +433,11 @@
 			files = (
 				F6EA81DD248617EA001F4C34 /* AppDelegate.swift in Sources */,
 				F6EA81DF248617EA001F4C34 /* SceneDelegate.swift in Sources */,
+				F60A7CD42486827600616E5C /* ResetPassword.swift in Sources */,
 				F6A007B32486340300667203 /* Home.swift in Sources */,
 				F6A007B124862DA600667203 /* Tutorial_Register.swift in Sources */,
 				F6A007AF2486233F00667203 /* ContentView.swift in Sources */,
+				F60A7CD2248674D700616E5C /* signIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

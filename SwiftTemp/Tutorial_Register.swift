@@ -7,7 +7,8 @@
 //
 
 import SwiftUI
-
+import Firebase
+import FirebaseAuth
 
 struct Tutorial_Register: View {
     @State private var email = ""
@@ -17,7 +18,8 @@ struct Tutorial_Register: View {
     @State private var birth = Date()
     var gender = ["남성", "여성"]
     @State private var selected_gender = 0
-    
+    @State var isModal : Bool = false
+
     var body: some View {
                 VStack {
                     Text("당신에 대해 더 깊게 알아보고 싶어요.")
@@ -25,8 +27,13 @@ struct Tutorial_Register: View {
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
                         .padding([.vertical], 70)
-                        .navigationBarTitle("회원가입", displayMode: .inline)
+                        .navigationBarTitle("로그인", displayMode: .inline)
 
+                    Button("계정이 이미 있나요? 로그인 하기"){
+                        self.isModal = true
+                    }.sheet(isPresented: $isModal, content : {
+                        signIn()
+                    })
 
                     TextField("E-Mail", text: self.$email)
                         .padding([.horizontal], 50)
@@ -60,8 +67,8 @@ struct Tutorial_Register: View {
 
                         }
                     }
-                    
-                    Button(action: {}) {
+                
+                    Button(action: self.signUp) {
                     Text("가입하기")
                         .foregroundColor(Color.orange)
                 }
@@ -71,6 +78,20 @@ struct Tutorial_Register: View {
 struct Tutorial_Register_Previews: PreviewProvider {
     static var previews: some View {
         Tutorial_Register()
+        }
+    }
+    
+    func signUp(){
+        Auth.auth().createUser(withEmail : self.email, password : self.password){
+            (user, error) in
+            if(user != nil){
+                print("Register Success.")
+                print(user)
+            }
+            
+            else{
+                print("Register Failed.")
+            }
         }
     }
 }
