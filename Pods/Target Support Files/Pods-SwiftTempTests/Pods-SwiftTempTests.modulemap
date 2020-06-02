@@ -1,0 +1,6 @@
+framework module Pods_SwiftTempTests {
+  umbrella header "Pods-SwiftTempTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
